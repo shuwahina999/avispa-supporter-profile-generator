@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="desccription" content="アビスパ福岡界隈で話題となっているアビサポ自己紹介。その自己紹介シートを簡単に作成できる事を実現したのがこのサイトです。#アビサポ自己紹介を通じて多くの方と交流できる事を目指して作成されました。">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>アビサポ自己紹介シートジェネレーター</title>
+	<link rel="icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/draw.js"></script>
+</head>
+
+<body onload="loadImage('preview');">
+	<div class="header">
+		<h1>アビサポ自己紹介シートジェネレーター</h1>
+	</div>
+	<div class="thanks">
+		<p>元となるシートはむぐらさんが作成されたものをお借りしました。<br class="br-sp">
+			大変見やすい画像を作成してしていただきありがとうございます！</p>
+		<p>むぐらさんのアカウントはこちらから！⇒<a href="https://twitter.com/mugura_0126">@mugura_0126</a></p>
+		<p>発端となったポスト⇒<a href="https://twitter.com/mugura_0126/status/1698694136197431677">こちら</a></p>
+		<p>ハッシュタグ⇒<a
+				href="https://twitter.com/hashtag/%E3%82%A2%E3%83%93%E3%82%B5%E3%83%9D%E8%87%AA%E5%B7%B1%E7%B4%B9%E4%BB%8B">#アビサポ自己紹介</a>
+				</p>
+	</div>
+	<div class="contents"><img id="image" alt="アビサポ自己紹介シートの画像" width="2160" height="1465"></div>
+	<div class="note1">
+		<p>先に『反映する！』ボタンを<br class="br-pc">押してから保存してください！</p>
+	</div>
+	<div class="buttons">
+		<button onclick="drawText('preview');" class="button">反映する！</button>
+		<button onclick="saveCanvas('preview');" class="button">画像を保存する</button>
+
+	</div>
+	<div class="main">
+
+		<div class="textBox">
+			<ul>
+				<li class="item">名前:</li>
+				<li><input type="text" id="name" placeholder="アビスパ福岡サポーター"></li>
+			</ul>
+			<ul>
+				<li class="item">年齢:</li>
+				<li><input type="text" id="age" placeholder="20歳"></li>
+			</ul>
+			<ul>
+				<li class="item">年齢の文字サイズ:</li>
+				<li class="charSize">
+					<form id="ageChar" class="radioform">
+						<input type="radio" name="ageChar" value="96px" id="ageChar1" checked><label for="ageChar1">大</label>
+						<input type="radio" name="ageChar" value="70px" id="ageChar2"><label for="ageChar2">中</label>
+						<input type="radio" name="ageChar" value="50px" id="ageChar3"><label for="ageChar3">小</label>
+					</form>
+				</li>
+			</ul>
+			<ul>
+				<li class="item">サポ歴:</li>
+				<li><input type="text" id="history" placeholder="20年"></li>
+			</ul>
+			<ul>
+				<li class="item">サポ歴の文字サイズ:</li>
+				<li class="charSize">
+					<form id="historyChar" class="radioform">
+						<input type="radio" name="historyChar" value="96px" id="historyChar1" checked><label for="historyChar1">大</label>
+						<input type="radio" name="historyChar" value="70px" id="historyChar2"><label for="historyChar2">中</label>
+						<input type="radio" name="historyChar" value="50px" id="historyChar3"><label for="historyChar3">小</label>
+					</form>
+				</li>
+			</ul>
+			<ul>
+				<li class="item">推し選手:</li>
+				<li><input type="text" id="player" placeholder="○○○○選手"></li>
+			</ul>
+			<ul>
+				<li class="item">アビサポになったきっかけ:</li>
+				<li><input type="text" id="why" placeholder="○○○○の影響"></li>
+			</ul>
+			<ul>
+				<li class="item">生息地:</li>
+				<li><input type="text" id="live" placeholder="バックスタンド"></li>
+			</ul>
+			<ul>
+				<li class="item">やってみたいこと:</li>
+				<li><input type="text" id="todo" placeholder="国立で博多へ帰ろうを熱唱！"></li>
+			</ul>
+		</div>
+		<br>
+		<p>以下は各行16文字以内推奨です。(はみ出でます)</p>
+		<div class="textBox">
+			<ul>
+				<li class="item">主なサポーター活動(1行目):</li>
+				<li><input type="text" id="activity1" placeholder="○○○○○○○○○○"></li>
+			</ul>
+			<ul>
+				<li class="item">主なサポーター活動(2行目):</li>
+				<li><input type="text" id="activity2" placeholder="○○○○○○○○○○"></li>
+			</ul>
+			<ul>
+				<li class="item">主なサポーター活動(3行目):</li>
+				<li><input type="text" id="activity3" placeholder="○○○○○○○○○○"></li>
+			</ul>
+			<ul>
+				<li class="item">主なサポーター活動(4行目):</li>
+				<li><input type="text" id="activity4" placeholder="○○○○○○○○○○"></li>
+			</ul>
+			<ul>
+				<li class="item">主なサポーター活動(5行目):</li>
+				<li><input type="text" id="activity5" placeholder="○○○○○○○○○○"></li>
+			</ul><br>
+			<ul>
+				<li class="item">一言(1行目):</li>
+				<li><input type="text" id="free1" placeholder="○○○○○○○○○○"></li>
+			</ul>
+			<ul>
+				<li class="item">一言(2行目):</li>
+				<li><input type="text" id="free2" placeholder="○○○○○○○○○○"></li>
+			</ul>
+			<ul>
+				<li class="item">一言(3行目):</li>
+				<li><input type="text" id="free3" placeholder="○○○○○○○○○○"></li>
+			</ul>
+			<ul>
+				<li class="item">一言(4行目):</li>
+				<li><input type="text" id="free4" placeholder="○○○○○○○○○○"></li>
+			</ul>
+		</div>
+	</div>
+	<p hidden><canvas id="preview"></canvas></p>
+
+</body>
+<div class="footer">
+	<p>作者のアカウントはこちら⇒<a href="https://twitter.com/shuwahina999">@shuwahina999</a></p>
+	<p>&copy;2023 shuwahina.net</p>
+	<p class="version">アビサポ自己紹介シートジェネレーター Version 1.0</p>
+</div>
+
+</html>
