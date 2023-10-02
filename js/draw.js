@@ -120,5 +120,4 @@ function saveCanvas(canvas_id) {
 	a.href = uri;
 	a.download = 'download.jpg';
 	a.click();
-
 }
