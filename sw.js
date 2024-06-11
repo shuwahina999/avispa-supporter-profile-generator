@@ -1,4 +1,5 @@
 var CACHE_NAME = 'avispa-supporter-profile-generator';
+var appVersion = '1.1.1';
 var urlsToCache = [
     '/js/draw.js',
     '/img/canvas.jpg',

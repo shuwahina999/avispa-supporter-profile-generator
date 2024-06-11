@@ -18,6 +18,24 @@
         "sizes": "800x800",
         "type": "image/png",
         "purpose": "maskable"
+      },
+      {
+        "src": "../img/icon_192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "../img/icon_512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "../img/icon_800.png",
+        "sizes": "800x800",
+        "type": "image/png",
+        "purpose": "any"
       }
     ],
     "start_url": "../index.html",
